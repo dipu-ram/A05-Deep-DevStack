@@ -3,9 +3,9 @@ function Hero() {
      return (
           <section className="flex justify-between items-center px-10 py-16 bg-white">
                <div className="max-w-lg">
-                   <h2 className="text-5xl fort-blod leading-tight">
+                   <h2 className="text-5xl font-bold leading-tight">
                       Build Your Ideal{" "}
-                      <span className="bg-gradient-to-r from-orange-500 to-purple-600 bg-clip-text-transparent">
+                      <span className="bg-linear-to-r from-orange-500 to-purple-600 bg-clip-text text-transparent">
                           Development Stack
                       </span>
                    </h2>
@@ -22,7 +22,7 @@ function Hero() {
 
       </div>
       </div>
-      <img src={banner} alt="Dev Stack Banner" className="w-[400px] h-[300] object-contain"/>
+      <img src={banner} alt="Dev Stack Banner" className="w-100 h-[300] object-contain"/>
           </section>
      );
 }

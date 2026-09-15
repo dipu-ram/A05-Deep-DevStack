@@ -17,7 +17,7 @@ function Navbar() {
         <button className='px-4 py-2 rounded bg-gray-200 text-gray-700 hover:bg-gray-300'>
           sign In
           </button>
-          <button className="px-4 py-2 rounded bg-gradient-to-r from-orange-400 to-purple-500 text-white hover:opacity-90">
+          <button className="px-4 py-2 rounded bg-linear-to-r from-orange-400 to-purple-500 text-white hover:opacity-90">
           Sign Up
         </button>
       </div>
