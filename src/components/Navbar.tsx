@@ -7,9 +7,15 @@ function Navbar() {
         <img src={logo} alt="Dev Stack" className="h-10 w-auto" />
         <span className="font-bold text-2xl text-purple-600"> </span>
       </div>
-      <ul className="flex gap-6 text-gray-700 font-medium">
+      <ul className="flex gap-6 font-medium">
         {["Home","Technologies","Projects","About","Contact"].map((item) => (
-          <li key={item} className="hover:text-orange-500 cursor-pointer">{item}</li>
+          <li key={item} 
+          className={`cursor-pointer transition-colors ${
+            item === "Home"
+            ? "text-pink-600 font-semibold"
+            : "text-gray-700 hover:text-orange-500"
+          }`}
+           >{item}</li>
         ))}
       </ul>
 
