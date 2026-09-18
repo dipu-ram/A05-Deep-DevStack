@@ -1,8 +1,11 @@
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { useState } from "react";
 import type { Tech } from "../data/technologies"
 type TechnologiesProps = {
   technologies: Tech[];
 };
+
 
 function Technologies({ technologies }: TechnologiesProps) {
   const [stack, setStack] = useState<Tech[]>([]);
@@ -11,22 +14,25 @@ function Technologies({ technologies }: TechnologiesProps) {
     const alreadyAdded = stack.some((item) => item.id === tech.id);
 
     if (alreadyAdded) {
-      alert(`${tech.name} is already added to stack!`);
+      toast.warn(`${tech.name} is already added to stack!`);
       return;
     }
     setStack([...stack, tech]);
+    toast.success(`${tech.name} added to stack!`);
   };
 
   const handleRemove =(id: string) => {
     setStack(stack.filter((item) => item.id !== id));
+    toast.info("Technology removed!");
   };
 
   const handleRemoveAll = () => {
     setStack([]);
+     toast.error("All technologies removed!");
   };
 
   return (
-    <section className="px-6 py-12 bg-white">
+    <section className="container mx-auto px-6 py-12 bg-white">
       
       <h2 className="text-2xl font-bold text-gray-800 mb-4">
          Explore the Technologies
@@ -102,9 +108,9 @@ function Technologies({ technologies }: TechnologiesProps) {
               <div className="text-xl font-bold text-gray-800">
 
                 <p className="text-sm text-gray-500">
-                  {stack.length} Technology{" "}
-                  {stack.length=== 1 ? "selected" : "selected"}
-                </p>
+                  {stack.length} {stack.length === 1 ? "Technology selected" : "Technologies selected"}
+                    </p>
+
 
                 {stack.length > 0 && (
                   <button

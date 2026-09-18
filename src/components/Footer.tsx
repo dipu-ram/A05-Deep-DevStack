@@ -34,7 +34,7 @@ function Footer() {
                  
                  <div className="mt-8 border-t border-gray-200 pt-4 text-sm flex justify-start gap-200">
                      <p>© {new Date().getFullYear()} Dev Stack. All rights reserved.</p>
-                     <div className="flex gap-5 mt-2 justify-start">
+                     <div className="flex-start gap-5 mt-2 justify-content">
                          <a href="#" className="hover: text-600">Privacy</a>
                          <a href="#" className="hover: text-600">Terms</a>
                      </div>
