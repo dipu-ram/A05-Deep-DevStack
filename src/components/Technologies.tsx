@@ -33,9 +33,8 @@ function Technologies({ technologies }: TechnologiesProps) {
 
   return (
     <section className="container mx-auto px-6 py-12 bg-white">
-      
-      <h2 className="text-2xl font-bold text-gray-800 mb-4">
-         Explore the Technologies
+       <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 mb-4">
+        Explore the Technologies
       </h2>
 
       <p className="text-lg text-gray-600 mb-8">

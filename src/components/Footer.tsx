@@ -32,11 +32,11 @@ function Footer() {
                  </div>  
                  </div> 
                  
-                 <div className="mt-8 border-t border-gray-200 pt-4 text-sm flex justify-start gap-200">
+                 <div className=" container mx-auto mt-8 border-t border-gray-200 pt-4 text-sm flex justify-start gap-200">
                      <p>© {new Date().getFullYear()} Dev Stack. All rights reserved.</p>
-                     <div className="flex-start gap-5 mt-2 justify-content">
-                         <a href="#" className="hover: text-600">Privacy</a>
-                         <a href="#" className="hover: text-600">Terms</a>
+                     <div className="flex flex-col md:flex-row md:justify-center gap-2 md:gap-6 mt-2">
+                         <a href="#" className="text-gray-600 hover:text-purple-600">Privacy</a>
+                         <a href="#" className="text-gray-600 hover:text-purple-600">Terms</a>
                      </div>
                  </div>
           </footer>
