@@ -161,7 +161,7 @@ function Technologies({ technologies }: TechnologiesProps) {
                       title={`Remove ${item.name}`}
                       aria-label={`Remove ${item.name}`}
                       >
-                        Remove
+                        Remove All
                       </button>
 
                     </div>
