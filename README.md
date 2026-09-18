@@ -3,7 +3,7 @@
 A web application built with React and TypeScript
 
 # Live link
-[view Live site] https://dynamic-croissant-cf8ae0.netlify.app
+[view Live site] https://strong-sawine-c86432.netlify.app
 
 
 
